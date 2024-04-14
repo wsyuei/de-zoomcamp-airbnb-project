@@ -1,6 +1,6 @@
 *.csv
 *xlsx
-*.json
+terraform/keys/my_credential.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
