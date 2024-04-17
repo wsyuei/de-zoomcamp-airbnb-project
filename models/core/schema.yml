@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: fact_tokyo_airbnb
+    description: >
+      The table contains records of tokyo airbnb listing used for analysis of de-zoomcamp-airbnb-project.
+      Only project related columns are included in the table.
+    
+    columns:
+      - name: id
+        data_type: int
+        description: ""
+
+      - name: review_date
+        data_type: date
+        description: ""
+
+      - name: neighbourhood
+        data_type: string
+        description: ""
+
+      - name: room_type
+        data_type: string
+        description: ""
+
+      - name: price
+        data_type: int64
+        description: ""
+
+      - name: availability_365
+        data_type: int64
+        description: ""
