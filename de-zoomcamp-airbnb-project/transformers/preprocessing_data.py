@@ -11,6 +11,9 @@ def transform(data, *args, **kwargs):
     data = data[data['price'] > 0]
 
     #   convert datetime to date
+    data['last_review_date'] = data['last_review'].dt.date
+
+    #   convert datetime to date
     data['last_review'] = data['last_review'].dt.date
 
     #   remove duplicated rows
