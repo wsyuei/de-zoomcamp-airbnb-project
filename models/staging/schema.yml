@@ -1,0 +1,10 @@
+version: 2
+
+sources: 
+  - name: staging 
+    database: example-de-zoomcamp
+    schema: example_de_zoomcamp_dataset
+
+    tables: 
+      - name: airbnb_tokyo
+    
