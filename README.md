@@ -20,8 +20,8 @@ Data Visualisation: Google Looker
 
 ## Content 
 ### Creating a pipeline for processing this dataset and putting it to a datalake
-Workflow Orchestration:
-![screenshot1](/screenshots/image3.png)
+Workflow Orchestration:  
+![screenshot1](/screenshots/image3.png)  
 The process includes using Mage to extract, transform, and load data from an API to Google Cloud Storage (GCS).
 1. Load data locally from the dataset, specify the data types and last_review as parse_date. 
 2. Preprocess and clean the data, remove duplicate and blank rows and columns as well as price with blank values. Format last_review column from datetime to date.
@@ -35,8 +35,8 @@ The process includes using Mage to extract, transform, and load data from an API
 2. Load raw data to Bigquery from Google Cloud Storage Bucket.
 3. Dataset name: example_de_zoomcamp_dataset
 4. Run query below to build a table with all available data.
-5. Table name: airbnb_tokyo
-![screenshot3](/screenshots/image5.png)
+5. Table name: airbnb_tokyo  
+![screenshot3](/screenshots/image5.png)  
 
 ### Transforming the data in the data warehouse: prepare it for the dashboard
 Use DBT to load the data to BigQuery.
@@ -47,16 +47,17 @@ Use DBT to load the data to BigQuery.
   - Exposing the output of a dbt model in a warehouse as a view.
 2. Core:
   - Contain only related production ready data.
-  - Exposing the output of a dbt model in a warehouse as a table to Bigquery.
+  - Exposing the output of a dbt model in a warehouse as a table to Bigquery.  
 ![screenshot5](/screenshots/image1.png)
 3. Environment and Job Triggers:
-  - The production environment will be set up as well as the job of deploy the pipeline once a week on Monday.
+  - The production environment will be set up as well as the job of deploy the pipeline once a week on Monday.  
 ![screenshot4](/screenshots/image2.png)
 
 ### Building a dashboard to visualize the data
 1. Open fact_airbnb_tokyo dataset in BigQuery and select Explore in Looker
 2. Build dashboard as below:
-3. Link: https://lookerstudio.google.com/s/ivQQ5nt5vPI 
+3. Link: https://lookerstudio.google.com/s/ivQQ5nt5vPI   
+
 ![screenshot6](/screenshots/image6.jpg)
 
 ## Reproducibility:
