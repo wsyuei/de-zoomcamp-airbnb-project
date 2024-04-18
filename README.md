@@ -21,7 +21,7 @@ Data Visualisation: Google Looker
 ## Content 
 ### Creating a pipeline for processing this dataset and putting it to a datalake
 Workflow Orchestration:
-
+!(https://myoctocat.com/assets/images/base-octocat.svg)
 The process includes using Mage to extract, transform, and load data from an API to Google Cloud Storage (GCS).
 1. Load data locally from the dataset, specify the data types and last_review as parse_date. 
 2. Preprocess and clean the data, remove duplicate and blank rows and columns as well as price with blank values. Format last_review column from datetime to date.
@@ -52,7 +52,7 @@ Use DBT to load the data to BigQuery.
 ### Building a dashboard to visualize the data
 1. Open fact_airbnb_tokyo dataset in BigQuery and select Explore in Looker
 2. Build dashboard as below:
-3. Link: https://lookerstudio.google.com/s/lHeLfPk99I0  
+3. Link: https://lookerstudio.google.com/s/ivQQ5nt5vPI 
 
 ## Reproducibility:
 1. Create a new project on Google Cloud with name: example-de-zoomcamp
@@ -66,10 +66,12 @@ Use DBT to load the data to BigQuery.
   7. Go to Manage Key> Add New Key> Json> Create. 
 3. Rename the json file to my_credential.json and Move the downloaded json file to folder keys.
 4. Run commands:
-  > terraform init
-  > terraform plan
-  > terraform apply
-5. Mage:
+   """
+  terraform init
+  terraform plan
+  terraform apply
+"""
+6. Mage:
   > docker compose up
 6. Go to http://localhost:6789/
 7. Run pipeline: airbnb_to_gcs to deploy the pipeline.
