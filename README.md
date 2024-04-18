@@ -21,13 +21,14 @@ Data Visualisation: Google Looker
 ## Content 
 ### Creating a pipeline for processing this dataset and putting it to a datalake
 Workflow Orchestration:
-![screenshot](/screenshots/image1.png)
+![screenshot1](/screenshots/image3.png)
 The process includes using Mage to extract, transform, and load data from an API to Google Cloud Storage (GCS).
 1. Load data locally from the dataset, specify the data types and last_review as parse_date. 
 2. Preprocess and clean the data, remove duplicate and blank rows and columns as well as price with blank values. Format last_review column from datetime to date.
 3. Partition the data using last_review date.
 4. Export partitioned data parquet file to GCS bucket.
 5. The pipeline is set to be executed once a month on the 1st of every month.
+![screenshot2](/screenshots/image4.png)
 
 ### Creating a pipeline for moving the data from the lake to a data warehouse
 1. Create a dataset on BigQuery.
@@ -35,6 +36,7 @@ The process includes using Mage to extract, transform, and load data from an API
 3. Dataset name: example_de_zoomcamp_dataset
 4. Run query below to build a table with all available data.
 5. Table name: airbnb_tokyo
+![screenshot3](/screenshots/image5.png)
 
 ### Transforming the data in the data warehouse: prepare it for the dashboard
 Use DBT to load the data to BigQuery.
@@ -46,13 +48,16 @@ Use DBT to load the data to BigQuery.
 2. Core:
   - Contain only related production ready data.
   - Exposing the output of a dbt model in a warehouse as a table to Bigquery.
+![screenshot4](/screenshots/image5.png)
 3. Environment and Job Triggers:
   - The production environment will be set up as well as the job of deploy the pipeline once a week on Monday.
+![screenshot5](/screenshots/image1.png)
 
 ### Building a dashboard to visualize the data
 1. Open fact_airbnb_tokyo dataset in BigQuery and select Explore in Looker
 2. Build dashboard as below:
 3. Link: https://lookerstudio.google.com/s/ivQQ5nt5vPI 
+![screenshot6](/screenshots/image6.png)
 
 ## Reproducibility:
 1. Create a new project on Google Cloud with name: example-de-zoomcamp
