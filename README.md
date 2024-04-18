@@ -21,7 +21,7 @@ Data Visualisation: Google Looker
 ## Content 
 ### Creating a pipeline for processing this dataset and putting it to a datalake
 Workflow Orchestration:
-!(https://github.com/wsyuei/de-zoomcamp-airbnb-project/blob/master/screenshots/image1.png)
+! (https://github.com/wsyuei/de-zoomcamp-airbnb-project/blob/master/screenshots/image1.png)
 The process includes using Mage to extract, transform, and load data from an API to Google Cloud Storage (GCS).
 1. Load data locally from the dataset, specify the data types and last_review as parse_date. 
 2. Preprocess and clean the data, remove duplicate and blank rows and columns as well as price with blank values. Format last_review column from datetime to date.
