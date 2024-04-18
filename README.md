@@ -72,9 +72,9 @@ Use DBT to load the data to BigQuery.
   7. Go to Manage Key> Add New Key> Json> Create. 
 3. Rename the json file to my_credential.json and Move the downloaded json file to folder keys.
 4. Run commands:  
-   ``terraform init``
-   ``terraform plan``
-   ``terraform apply``
+   ``terraform init``  
+   ``terraform plan``  
+   ``terraform apply``  
 6. Mage:
   ``docker compose up``
 6. Go to http://localhost:6789/
