@@ -10,13 +10,13 @@ This project aims to analyze Airbnb listings in Tokyo, Japan, focusing on the di
 ## Data Pipeline
 The pipeline for this project will operate in batch mode, designed to run periodically on a quarterly basis.
 
-## Technologies
-Cloud: GCP
-Infrastructure as code (IaC): Terraform
-Workflow orchestration: Mage
-Data Warehouse: BigQuery
-Batch Processing: DBT Cloud
-Data Visualisation: Google Looker
+## Technologies  
+Cloud: GCP  
+Infrastructure as code (IaC): Terraform  
+Workflow orchestration: Mage  
+Data Warehouse: BigQuery  
+Batch Processing: DBT Cloud  
+Data Visualisation: Google Looker  
 
 ## Content 
 ### Creating a pipeline for processing this dataset and putting it to a datalake
@@ -71,25 +71,23 @@ Use DBT to load the data to BigQuery.
   6. Continue > Done.
   7. Go to Manage Key> Add New Key> Json> Create. 
 3. Rename the json file to my_credential.json and Move the downloaded json file to folder keys.
-4. Run commands:
-   """
-  terraform init
-  terraform plan
-  terraform apply
-"""
+4. Run commands:  
+   ``terraform init``
+   ``terraform plan``
+   ``terraform apply``
 6. Mage:
-  > docker compose up
+  ``docker compose up``
 6. Go to http://localhost:6789/
 7. Run pipeline: airbnb_to_gcs to deploy the pipeline.
 8. BigQuery:
   - Run query in airbnb_tokyo.sql.
-9. DBT:
-  1. Set up a DBT project.
-  2. Add this github repo for version control.
-  3. Connect to Bigquery using my_credential.json.
-  4. Run build.
-  5. Set up the job in a production environment.
-  6. Job will be triggered on every  Monday. 
+9. DBT:  
+    1. Set up a DBT project.
+    2. Add this github repo for version control.
+    3. Connect to Bigquery using my_credential.json.
+    4. Run build.
+    5. Set up the job in a production environment.
+    6. Job will be triggered on every  Monday. 
 
 10. Go to BigQuery and table fact_airbnb_tokyo should exist in BigQuery Dataset.
 11. Select the table and select Explore in Looker to develop the dashboard.
