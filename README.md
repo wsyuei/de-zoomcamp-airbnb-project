@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+# Project Airbnb Tokyo
 
 ### Using the starter project
 
@@ -13,3 +13,5 @@ Try running the following commands:
 - Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+If the dashboard is not available, please refer to folder ./dashboard for the image and exported pdf files of dashbaord developed.
