@@ -48,16 +48,16 @@ Use DBT to load the data to BigQuery.
 2. Core:
   - Contain only related production ready data.
   - Exposing the output of a dbt model in a warehouse as a table to Bigquery.
-![screenshot4](/screenshots/image5.png)
+![screenshot5](/screenshots/image1.png)
 3. Environment and Job Triggers:
   - The production environment will be set up as well as the job of deploy the pipeline once a week on Monday.
-![screenshot5](/screenshots/image1.png)
+![screenshot4](/screenshots/image2.png)
 
 ### Building a dashboard to visualize the data
 1. Open fact_airbnb_tokyo dataset in BigQuery and select Explore in Looker
 2. Build dashboard as below:
 3. Link: https://lookerstudio.google.com/s/ivQQ5nt5vPI 
-![screenshot6](/screenshots/image6.png)
+![screenshot6](/screenshots/image6.jpg)
 
 ## Reproducibility:
 1. Create a new project on Google Cloud with name: example-de-zoomcamp
